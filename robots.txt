@@ -1,6 +1,0 @@
-﻿User-agent: *
-Allow: /
-Disallow: /.git/
-Disallow: /.github/
-
-Sitemap: https://ремонтбытсервис74.рф/sitemap.xml
