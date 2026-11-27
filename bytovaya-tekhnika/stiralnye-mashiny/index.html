@@ -1109,7 +1109,180 @@
         </aside>
       </div>
     </section>
+<!-- Блок с примерами работ и ценами (Стиральные машины) -->
+<section id="cases-prices-washing" class="washer-block">
+  <div class="washer-container">
+    <h2>Примеры работ и ориентировочные цены</h2>
+    <p class="washer-subtitle">
+      Ремонт на дому по Челябинску и пригороду. Диагностика и выезд при ремонте — 0 ₽ (при отказе от ремонта — 500 ₽). Даю гарантию, выдаю чеки.
+    </p>
 
+    <!-- Галерея живых фото -->
+    <div class="washer-photos">
+      <figure class="washer-photo-card">
+        <img
+          src="/images/стиральные-машины-мастер.jpg"
+          alt="Частный мастер Илья по ремонту стиральных машин в Челябинске"
+          loading="lazy"
+        >
+        <figcaption>Частный мастер Илья — приеду в удобное время напрямую, без посредников</figcaption>
+      </figure>
+
+      <figure class="washer-photo-card">
+        <img
+          src="/images/стиральные-машины-работа.jpg"
+          alt="Мастер Илья ремонтирует бак стиральной машины на дому"
+          loading="lazy"
+        >
+        <figcaption>Ремонт любой сложности: от замены насоса до перепрессовки подшипников</figcaption>
+      </figure>
+
+      <figure class="washer-photo-card">
+        <img
+          src="/images/стиральные-машины-деталь.jpg"
+          alt="Разобранная стиральная машина, замена амортизаторов и ТЭНа"
+          loading="lazy"
+        >
+        <figcaption>Ремонтирую на месте: использую оригинальные ТЭНы, помпы и амортизаторы</figcaption>
+      </figure>
+    </div>
+
+    <!-- Прайс-блок -->
+    <div class="washer-price-box">
+      <h3>Цены на ремонт стиральных машин</h3>
+      <ul class="washer-price-list">
+        <li>
+          <span>Выезд и диагностика (при ремонте)</span>
+          <strong>0 ₽</strong>
+        </li>
+        <li>
+          <span>Устранение засора, извлечение посторонних предметов</span>
+          <strong>от 1 000 ₽</strong>
+        </li>
+        <li>
+          <span>Замена ТЭНа (нагревателя) или сливного насоса (помпы)</span>
+          <strong>от 1 800 ₽</strong>
+        </li>
+        <li>
+          <span>Ремонт или замена замка люка (УБЛ), ручки, манжеты</span>
+          <strong>от 1 200 ₽</strong>
+        </li>
+        <li>
+          <span>Замена амортизаторов, пружин или приводного ремня</span>
+          <strong>от 1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Капитальный ремонт (замена подшипников, ремонт бака)</span>
+          <strong>от 4 000 ₽</strong>
+        </li>
+      </ul>
+      <p class="washer-note">
+        * Точная цена зависит от марки машины (Bosch, LG, Indesit, Samsung и др.) и необходимых запчастей. Озвучивается строго до начала ремонта.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Стили (можно добавить в файл стилей или оставить прямо в HTML внизу страницы) -->
+<style>
+  .washer-block {
+    padding: 40px 16px;
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  .washer-container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .washer-subtitle {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  .washer-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .washer-photo-card {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .washer-photo-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .washer-photo-card figcaption {
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #374151;
+    border-top: 1px solid #e5e7eb;
+  }
+  .washer-price-box {
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .washer-price-box h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #111827;
+  }
+  .washer-price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  .washer-price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .washer-price-list li:last-child {
+    border-bottom: none;
+  }
+  .washer-price-list span {
+    font-size: 16px;
+    color: #1f2937;
+  }
+  .washer-price-list strong {
+    font-size: 16px;
+    color: #ea580c;
+    white-space: nowrap;
+  }
+  .washer-note {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .washer-photos {
+      grid-template-columns: 1fr;
+    }
+    .washer-photo-card img {
+      height: 200px;
+    }
+    .washer-price-list li {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+</style>
+    
     <!-- Common Problems -->
     <section class="section section-alt" id="problems">
       <div class="container">
