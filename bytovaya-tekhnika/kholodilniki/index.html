@@ -1109,6 +1109,174 @@
         </aside>
       </div>
     </section>
+<!-- Блок с примерами работ и ценами (Холодильники) -->
+<section id="cases-and-prices" class="b2b-block">
+  <div class="b2b-container">
+    <h2>Примеры работ и ориентировочные цены</h2>
+    <p class="b2b-subtitle">
+      Выезд на дом по Челябинску и Сосновскому району. Диагностика — 0 ₽ при согласии на ремонт (при отказе — 500 ₽). Гарантия на работы и запчасти, оформляю чек «Мой налог».
+    </p>
+
+    <!-- Сетка живых фотографий -->
+    <div class="b2b-photos">
+      <figure class="b2b-photo-card">
+        <img
+          src="/images/kholodilnik-master.jpg"
+          alt="Частный мастер Илья по ремонту бытовых холодильников в Челябинске"
+          loading="lazy"
+        >
+        <figcaption>Частный мастер Илья — работаю напрямую, без наценок и посредников</figcaption>
+      </figure>
+
+      <figure class="b2b-photo-card">
+        <img
+          src="/images/kholodilnik-rabota.jpg"
+          alt="Диагностика и заправка бытового холодильника фреоном на дому"
+          loading="lazy"
+        >
+        <figcaption>Диагностика, вакуумирование и заправка холодильника на дому</figcaption>
+      </figure>
+
+      <figure class="b2b-photo-card">
+        <img
+          src="/images/kholodilnik-oborudovanie.jpg"
+          alt="Манометрический коллектор, вакуумный насос и инструмент для ремонта холодильников"
+          loading="lazy"
+        >
+        <figcaption>Профессиональный инструмент, вакуумный насос и качественные запчасти</figcaption>
+      </figure>
+    </div>
+
+    <!-- Прайс-блок -->
+    <div class="b2b-price-box">
+      <h3>Основные работы и стоимость</h3>
+      <ul class="b2b-price-list">
+        <li>
+          <span>Выезд мастера и диагностика (при ремонте)</span>
+          <strong>0 ₽</strong>
+        </li>
+        <li>
+          <span>Замена термостата, датчика температуры или пускового реле</span>
+          <strong>от 1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Ремонт системы No Frost (ТЭН, вентилятор, предохранитель)</span>
+          <strong>от 2 500 ₽</strong>
+        </li>
+        <li>
+          <span>Устранение утечки хладагента и заправка фреоном</span>
+          <strong>от 3 000 ₽</strong>
+        </li>
+        <li>
+          <span>Замена компрессора бытового холодильника</span>
+          <strong>от 5 500 ₽</strong>
+        </li>
+      </ul>
+      <p class="b2b-note">
+        Точная стоимость согласуется после диагностики до начала ремонта и зависит от марки холодильника и сложности поломки.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .b2b-block {
+    padding: 40px 16px;
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  .b2b-container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .b2b-subtitle {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  .b2b-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .b2b-photo-card {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .b2b-photo-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .b2b-photo-card figcaption {
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #374151;
+    border-top: 1px solid #e5e7eb;
+  }
+  .b2b-price-box {
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .b2b-price-box h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #111827;
+  }
+  .b2b-price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  .b2b-price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .b2b-price-list li:last-child {
+    border-bottom: none;
+  }
+  .b2b-price-list span {
+    font-size: 16px;
+    color: #1f2937;
+  }
+  .b2b-price-list strong {
+    font-size: 16px;
+    color: #ea580c;
+    white-space: nowrap;
+  }
+  .b2b-note {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .b2b-photos {
+      grid-template-columns: 1fr;
+    }
+    .b2b-photo-card img {
+      height: 200px;
+    }
+    .b2b-price-list li {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+</style>
 
     <!-- Common Problems -->
     <section class="section section-alt" id="problems">
