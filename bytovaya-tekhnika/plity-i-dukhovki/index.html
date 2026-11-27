@@ -1110,7 +1110,179 @@
         </aside>
       </div>
     </section>
+<!-- Блок с примерами работ и ценами (Плиты и варочные панели) -->
+<section id="cases-prices-stoves" class="stove-block">
+  <div class="stove-container">
+    <h2>Примеры работ и ориентировочные цены</h2>
+    <p class="stove-subtitle">
+      Выезд на дом по Челябинску и Сосновскому району. Диагностика без ремонта — 1 500 ₽ (0 ₽ при согласии на ремонт). Гарантия на работы и запчасти, оформляю чек «Мой налог».
+    </p>
 
+    <!-- Сетка живых фотографий -->
+    <div class="stove-photos">
+      <figure class="stove-photo-card">
+        <img
+          src="/images/plita-varochnaya.jpg"
+          alt="Ремонт стеклокерамической варочной панели, замена конфорки и платы управления в Челябинске"
+          loading="lazy"
+        >
+        <figcaption>Ремонт стеклокерамических варочных панелей: конфорки Hi-Light, сенсоры и платы</figcaption>
+      </figure>
+
+      <figure class="stove-photo-card">
+        <img
+          src="/images/plita-elektro.jpg"
+          alt="Диагностика и ремонт электроплиты Hansa на дому"
+          loading="lazy"
+        >
+        <figcaption>Диагностика и ремонт электроплит и духовых шкафов на дому</figcaption>
+      </figure>
+
+      <figure class="stove-photo-card">
+        <img
+          src="/images/plita-indukciya.jpg"
+          alt="Ремонт индукционной плиты, проверка индукционных катушек мультиметром"
+          loading="lazy"
+        >
+        <figcaption>Ремонт бытовых и коммерческих индукционных плит с полной диагностикой электроники</figcaption>
+      </figure>
+    </div>
+
+    <!-- Прайс-блок -->
+    <div class="stove-price-box">
+      <h3>Цены на ремонт плит, варочных панелей и духовок</h3>
+      <ul class="stove-price-list">
+        <li>
+          <span>Выезд и диагностика (при отказе от ремонта)</span>
+          <strong>1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Выезд и диагностика (при согласии на ремонт)</span>
+          <strong>0 ₽</strong>
+        </li>
+        <li>
+          <span>Замена переключателя мощности, терморегулятора или проводки</span>
+          <strong>от 1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Замена ТЭНа духовки или чугунной конфорки</span>
+          <strong>от 1 800 ₽</strong>
+        </li>
+        <li>
+          <span>Замена конфорки Hi-Light на стеклокерамической панели</span>
+          <strong>от 2 500 ₽</strong>
+        </li>
+        <li>
+          <span>Ремонт модуля управления или силовой платы индукционной плиты</span>
+          <strong>от 3 000 ₽</strong>
+        </li>
+      </ul>
+      <p class="stove-note">
+        * Точная стоимость согласуется после диагностики до начала работ и зависит от типа плиты (электрическая, стеклокерамика, индукция) и стоимости комплектующих.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stove-block {
+    padding: 40px 16px;
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  .stove-container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .stove-subtitle {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  .stove-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .stove-photo-card {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .stove-photo-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .stove-photo-card figcaption {
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #374151;
+    border-top: 1px solid #e5e7eb;
+  }
+  .stove-price-box {
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .stove-price-box h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #111827;
+  }
+  .stove-price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  .stove-price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .stove-price-list li:last-child {
+    border-bottom: none;
+  }
+  .stove-price-list span {
+    font-size: 16px;
+    color: #1f2937;
+  }
+  .stove-price-list strong {
+    font-size: 16px;
+    color: #ea580c;
+    white-space: nowrap;
+  }
+  .stove-note {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .stove-photos {
+      grid-template-columns: 1fr;
+    }
+    .stove-photo-card img {
+      height: 200px;
+    }
+    .stove-price-list li {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+    </style>
+    
     <!-- Common Problems -->
     <section class="section section-alt" id="problems">
       <div class="container">
