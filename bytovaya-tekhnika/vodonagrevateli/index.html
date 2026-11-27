@@ -1110,7 +1110,184 @@
         </aside>
       </div>
     </section>
+<!-- Блок с примерами работ и ценами (Водонагреватели) -->
+<section id="cases-prices-boilers" class="boiler-block">
+  <div class="boiler-container">
+    <h2>Примеры работ и ориентировочные цены</h2>
+    <p class="boiler-subtitle">
+      Быстрый выезд на дом по Челябинску и ближайшим посёлкам. Диагностика без ремонта — 1 500 ₽ (0 ₽ при согласии на проведение работ). Предоставляю чеки, даю честную гарантию.
+    </p>
 
+    <!-- Сетка живых фотографий -->
+    <div class="boiler-photos">
+      <figure class="boiler-photo-card">
+        <img
+          src="/images/boilers-master.jpg"
+          alt="Частный мастер Илья по ремонту водонагревателей в Челябинске"
+          loading="lazy"
+        >
+        <figcaption>Частный мастер Илья — приеду напрямую, без наценок и посредников</figcaption>
+      </figure>
+
+      <figure class="boiler-photo-card">
+        <img
+          src="/images/boilers-rabota.jpg"
+          alt="Процесс ремонта и замены ТЭНа в водонагревателе на дому"
+          loading="lazy"
+        >
+        <figcaption>Диагностика, замена ТЭНов и устранение течи на месте за 1 визит</figcaption>
+      </figure>
+
+      <figure class="boiler-photo-card">
+        <img
+          src="/images/boilers-detal.jpg"
+          alt="Извлеченный изношенный ТЭН водонагревателя и инструменты мастера"
+          loading="lazy"
+        >
+        <figcaption>Очистка бака от накипи, замена анодов и ТЭНов на оригинальные</figcaption>
+      </figure>
+    </div>
+
+    <!-- Прайс-блок -->
+    <div class="boiler-price-box">
+      <h3>Цены на ремонт водонагревателей</h3>
+      <ul class="boiler-price-list">
+        <li>
+          <span>Выезд и диагностика (при отказе от ремонта)</span>
+          <strong>1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Выезд и диагностика (при согласии на ремонт)</span>
+          <strong>0 ₽</strong>
+        </li>
+        <li>
+          <span>Замена ТЭНа (нагревательного элемента)</span>
+          <strong>от 1 800 ₽</strong>
+        </li>
+        <li>
+          <span>Замена термостата, терморегулятора или датчика</span>
+          <strong>от 1 200 ₽</strong>
+        </li>
+        <li>
+          <span>Замена магниевого анода (защита от коррозии) и чистка бака</span>
+          <strong>от 1 500 ₽</strong>
+        </li>
+        <li>
+          <span>Устранение течи, замена прокладок, фланцев, клапанов</span>
+          <strong>от 1 000 ₽</strong>
+        </li>
+        <li>
+          <span>Ремонт или замена платы управления (электроники)</span>
+          <strong>от 2 500 ₽</strong>
+        </li>
+      </ul>
+      <p class="boiler-note">
+        * Точная стоимость ремонта рассчитывается после диагностики на объекте и зависит от объёма бака, бренда (Thermex, Ariston, Electrolux и др.) и стоимости комплектующих.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Стили (можно вставить прямо в HTML или скопировать в .css файл) -->
+<style>
+  .boiler-block {
+    padding: 40px 16px;
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+  .boiler-container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .boiler-subtitle {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+  .boiler-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .boiler-photo-card {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .boiler-photo-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .boiler-photo-card figcaption {
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #374151;
+    border-top: 1px solid #e5e7eb;
+  }
+  .boiler-price-box {
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  .boiler-price-box h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #111827;
+  }
+  .boiler-price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  .boiler-price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .boiler-price-list li:last-child {
+    border-bottom: none;
+  }
+  .boiler-price-list span {
+    font-size: 16px;
+    color: #1f2937;
+  }
+  .boiler-price-list strong {
+    font-size: 16px;
+    color: #ea580c;
+    white-space: nowrap;
+  }
+  .boiler-note {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .boiler-photos {
+      grid-template-columns: 1fr;
+    }
+    .boiler-photo-card img {
+      height: 200px;
+    }
+    .boiler-price-list li {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+</style>
+    
     <!-- Common Problems -->
     <section class="section section-alt" id="problems">
       <div class="container">
